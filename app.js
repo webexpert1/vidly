@@ -15,7 +15,7 @@ const app = express();
 
 mongoose.connect('mongodb://localhost/vidly')
 	.then(() => console.log('Connected to MongoDb...'))
-	.catch((err) => console.log('Cannot connect of MongoDb')); 
+	.catch((err) => console.log('Cannot connect to MongoDb')); 
 
 app.set('view engine', 'pug');
 app.set('views', './views');
